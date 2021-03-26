@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Alta nuevo cliente{% endblock %}
+
+{% block body %}
+
+    <form action="{{ path('crearUsuario') }}" method="post">
+        <input type="text" name="empresa" placeholder="empresa">
+        <input type="text" name="telefono" placeholder="telefono">
+        <input type="text" name="nombre" placeholder="nombre">
+        <input type="text" name="cod_cliente" placeholder="codigo cliente">
+        <input type="text" name="direccion" placeholder="direccion">
+        <input type="text" name="correo" placeholder="correo">
+        <input type="text" name="provincia" placeholder="provincia">
+        <input type="text" name="ciudad" placeholder="ciudad">
+        <input type="password" name="contrasena" placeholder="contrasena">
+        <input type="submit" value="Dar de alta">
+
+    </form>
+
+
+{% endblock %}
